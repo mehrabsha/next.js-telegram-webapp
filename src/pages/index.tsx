@@ -15,10 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
-        <span className="text-2xl font-bold text-telegram-black">
-          HI {(window.Telegram.WebApp.initData as any).user.first_name}
-          {(window.Telegram.WebApp.initData as any).user.last_name}
-        </span>
+        <span className="text-2xl font-bold text-telegram-black">HI</span>
       </main>
 
       <footer className="flex h-20 w-full items-center justify-center border-t border-t-telegram-black">
