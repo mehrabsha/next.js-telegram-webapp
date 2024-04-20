@@ -4,9 +4,6 @@ import Head from 'next/head';
 import GithubSvg from '../assets/GithubSvg';
 
 const Home: NextPage = () => {
-  console.log('window.Telegram');
-  console.log('window.WebApp', window.Telegram.WebApp);
-
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-telegram-white">
       <Head>
