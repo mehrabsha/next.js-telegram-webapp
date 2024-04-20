@@ -16,9 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       .then((response) => setIsHashValid(response.status === 200));
   }, []);
 
-  console.log('window.Telegram', window.Telegram);
-  console.log('window.WebApp', window.Telegram.WebApp);
-
   if (!isHashValid) {
     return null;
   }
