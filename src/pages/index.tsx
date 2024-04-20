@@ -29,9 +29,17 @@ const Home: NextPage = () => {
         <button
           onClick={() =>
             (window.Telegram.WebApp as any).openTelegramLink(
-              `https://telegram.me/share/url?url=${encodeURIComponent(
+              `https://t.me/share/url?url=${encodeURIComponent(
                 location.href
               )}&text=${encodeURIComponent('aha abbas')}`
+            )
+          }>
+          aaaaaaaa
+        </button>
+        <button
+          onClick={() =>
+            (window.Telegram.WebApp as any).openTelegramLink(
+              `https://t.me/vineriran_bot/haha?startapp=command`
             )
           }>
           aaaaaaaa
