@@ -16,10 +16,7 @@ const Home: NextPage = () => {
           HI {window.Telegram.WebApp.initDataUnsafe.user?.first_name}
           {window.Telegram.WebApp.initDataUnsafe.user?.last_name}
         </span>
-        <button
-          onClick={() => (window.Telegram.WebApp as any).openTelegramLink('https://google.com')}>
-          ahaa
-        </button>
+        <button onClick={() => Telegram.WebApp.sendData('aha')}>ahaa</button>
       </main>
 
       <footer className="flex h-20 w-full items-center justify-center border-t border-t-telegram-black">
