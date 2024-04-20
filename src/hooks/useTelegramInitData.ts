@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useEffect, useState } from 'react';
 import { TelegramWebApps } from 'telegram-webapps-types';
 

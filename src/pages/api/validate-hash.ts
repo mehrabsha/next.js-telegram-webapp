@@ -29,6 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 }
 
 async function isHashValid(data: Record<string, string>, botToken: string) {
+  console.log('data', data);
   const encoder = new TextEncoder();
 
   const checkString = Object.keys(data)
