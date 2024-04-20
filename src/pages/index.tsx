@@ -15,11 +15,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
-        <span className="text-2xl font-bold text-telegram-black">HI</span>
+        <span className="text-2xl font-bold text-telegram-black">
+          HI {window.Telegram.WebApp.initDataUnsafe.user?.first_name}
+          {window.Telegram.WebApp.initDataUnsafe.user?.last_name}
+        </span>
       </main>
-      <span>{JSON.stringify(window.Telegram)}</span>
-      <span>===========================</span>
-      <span>{JSON.stringify(window.Telegram.WebApp)}</span>
 
       <footer className="flex h-20 w-full items-center justify-center border-t border-t-telegram-black">
         FOOTER
