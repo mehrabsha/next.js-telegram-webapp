@@ -26,6 +26,16 @@ const Home: NextPage = () => {
           }>
           wwwww
         </button>
+        <button
+          onClick={() =>
+            (window.Telegram.WebApp as any).openTelegramLink(
+              `https://telegram.me/share/url?url=${encodeURIComponent(
+                location.href
+              )}&text=${encodeURIComponent('aha abbas')}`
+            )
+          }>
+          aaaaaaaa
+        </button>
       </main>
 
       <footer className="flex h-20 w-full items-center justify-center border-t border-t-telegram-black">
