@@ -17,10 +17,8 @@ const Home: NextPage = () => {
           {window.Telegram.WebApp.initDataUnsafe.user?.last_name}
         </span>
         <button
-          onClick={() =>
-            (window.Telegram.WebApp as any).openTelegramLink('tg://msg?text=Mi_mensaje')
-          }>
-          aha
+          onClick={() => (window.Telegram.WebApp as any).openTelegramLink('https://google.com')}>
+          ahaa
         </button>
       </main>
 
