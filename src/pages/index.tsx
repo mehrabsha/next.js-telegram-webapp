@@ -16,33 +16,32 @@ const Home: NextPage = () => {
           HI {window.Telegram.WebApp.initDataUnsafe.user?.first_name}
           {window.Telegram.WebApp.initDataUnsafe.user?.last_name}
         </span>
+        {window.Telegram.WebApp.initDataUnsafe.start_param && (
+          <span className="text-2xl font-bold text-telegram-black">
+            INVITE CODE :{window.Telegram.WebApp.initDataUnsafe.start_param}
+          </span>
+        )}
         <button
-          onClick={() =>
-            (window.Telegram.WebApp as any).openLink(
-              `https://telegram.me/share/url?url=${encodeURIComponent(
-                location.href
-              )}&text=${encodeURIComponent('aha abbas')}`
-            )
-          }>
-          wwwww
-        </button>
-        <button
+          className="text-telegram-black"
           onClick={() =>
             (window.Telegram.WebApp as any).openTelegramLink(
               `https://t.me/share/url?url=${encodeURIComponent(
-                location.href
-              )}&text=${encodeURIComponent('aha abbas')}`
+                'https://3engine.io/'
+              )}&text=${encodeURIComponent('جوین شو تا اسکمت کنم')}`
             )
           }>
-          aaaaaaaa
+          Invite friends
         </button>
         <button
+          className="text-telegram-black"
           onClick={() =>
             (window.Telegram.WebApp as any).openTelegramLink(
-              `https://t.me/vineriran_bot/haha?startapp=command`
+              `https://t.me/share/url?url=${encodeURIComponent(
+                'https://t.me/vineriran_bot/haha?startapp=koskhol'
+              )}&text=${encodeURIComponent(' اره اینوایت کد هم دارم کیرمم  نیستی')}`
             )
           }>
-          aaaaaaaa
+          Invite friends with code
         </button>
       </main>
 
